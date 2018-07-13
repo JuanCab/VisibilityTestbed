@@ -18,10 +18,10 @@ seems inconsistent. Sometimes both the "yes" and "no" elements are visible,
 sometimes the proper element is visible, but offset (indicating that the
 `display:none` part of the style has been ignored).
 
-Viewing the code in Developer mode reveals the CSS style (`display: none;
-visibility: hidden`) for the hiding the `<DIV>` elements that are supposed to
-be invisible does seem to be present, but is being ignored by Safari for
-unknown reasons.
+Viewing the HTML/JavaScript/CSS code this Jupiter Notebook generates in
+Safari's Developer mode reveals the CSS style (`display: none; visibility:
+hidden`) for the hiding the `<DIV>` elements that are supposed to be invisible
+does seem to be present, but is being ignored by Safari for unknown reasons.
 
 This bug was initially reported at
 

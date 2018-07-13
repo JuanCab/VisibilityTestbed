@@ -40,6 +40,12 @@ Getting Started
 
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/JuanCab/VisibilityTestbed/master?filepath=index.ipynb)
 
+**WARNING**: Once Binder has built the JupyterHub and started your notebook,
+when you hit the 'appmode' button, Safari will warn you that you are 'leaving
+the page'.  This is normal, just click on 'Leave Page', and this notebook will
+execute in the browser and generate the webpage illustrating the bug. 
+
+
 Goals
 -----
 

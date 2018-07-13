@@ -1,0 +1,6 @@
+name: VisibilityTestbed
+channels:
+  - conda-forge
+dependencies:
+  - appmode
+  - ipywidgets>=7.2

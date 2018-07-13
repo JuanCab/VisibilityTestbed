@@ -6,24 +6,23 @@ Demonstrates a problem in Safari with handling visibility of elements in CSS.
 To see this rendering bug in action, download the Jupyter notebook and execute
 it in the current version of Safari (Version 11.1.2 (13605.3.8)).  
 
-If you don't want to install Jupyter notebooks on your Mac, you can execute it
-on the Binder website (see the link below).
-
-This notebook allows you to see the bug in action.  The notebook shows an
-attempt to use a Toggle Button to control which text you see. On Google Chrome
-it works just as expected, the visible text changes to indicate the appropraite
-control panel would have been turned visible.
+Executing this Jupyter Notebook will generate a simple set of widgets.  The
+goal was that selecting from 'yes' or 'no' on the toggle button changes the CSS
+for elements on the page, making them visible or invisible.  This works on
+Google Chrome, but when run on Safari, it doesn't.  Viewing the code in
+Developer mode reveals the CSS for the hiding the elements that are supposed to
+be invisible does seem to be present, but is being ignored by Safari for
+unknown reasons.
 
 On Safari (Version 11.1.2 (13605.3.8), the most current release under macOS
-11.13.6, it does **NOT**, instead displaying both control panels after you
-interact with the toggle button by clicking on the 'no' in the ToggleButtons
-widget.
+11.13.6, it does **NOT**, instead displaying all elements, even the ones meant
+to be visible, after you interact with the toggle button by clicking on the
+'no' in the ToggleButtons widget.
 
-If I go into developer mode on Safari after clicking on 'No', the source code
-shows the CSS style for `<DIV>` containing the "Main Sequence Control Panel" is
-set to `display: none; visibility: hidden`, yet we see the contents of the
-`<DIV>`. As near as I can tell, this is a Safari bug, unless the Jupyter
-ntoebook is supposed to somehow tell Safari to refresh its CSS.
+Viewing the code in Developer mode reveals the CSS style (`display: none;
+visibility: hidden`) for the hiding the `<DIV>` elements that are supposed to
+be invisible does seem to be present, but is being ignored by Safari for
+unknown reasons.
 
 This bug was initially reported at
 
